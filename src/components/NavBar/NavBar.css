@@ -1,75 +1,35 @@
-
-.NavBar {
-    margin: 0;
-    box-sizing: border-box;
+.header{
+    color: rgb(228, 220, 220);
     font-family: 'Quicksand', sans-serif;
 }
-
-.header{
-    height: 80px;
-    width:100% ;   
-    background-color:#bdb1a6;
-    display: flex;
-    padding: 0 20px;
-    position: fixed;/*deja fijo el header*/
-    text-decoration: none;
-}
-
-.NavCarrito{
-    margin-right: auto;
-    line-height: 70px;
-    font-size: 30px;
-    cursor: pointer;
-    color: rgb(228, 220, 220);
-}
-
-.NavCarrito:hover {
-    color: whitesmoke;
-    transition: 0.5s;
-}
-
-.logo {
-    box-sizing: border-box;
+.logo{
     font-size: 50px;
+    text-decoration: none;
     color: rgb(228, 220, 220);
-    line-height: 80px;
-    cursor: pointer;
 }
 .logo:hover {
     color: rgb(228, 220, 220);
     transition: 0.5s;
 }
 
-.Nav{
-    display: flex;
-    justify-content: space-between;
-}
+.header{
+    background-color: #bdb1a6;
+    border-bottom: black
+   }
 
-.NavLink{
-    text-decoration: none; 
-}
- 
-.NavMenuLink{
-    padding: 8px 12px;
-    border-radius: 3px;
-    color: white;
-    margin-right: auto;
+.carrito{
+    font-size: 30px;
+    color: rgb(228, 220, 220);
     cursor: pointer;
 }
- 
-.NavMenu{
- display: flex;
- list-style: none;
-} 
 
-.NavMenuItem{
-    font-size: 15px;
-    margin: 0 10px;
-    line-height: 80px;
-    width: max-content;
+.nav_link{
+    font-weight: lighter;
+    font-size: 20px;
+    color: rgb(228, 220, 220);
 }
 
-.NavMenuLink:hover {
-    color: rgb(228, 220, 220);
+.nav_link:hover {
+    color: white;
     transition: 0.5s;
 }
