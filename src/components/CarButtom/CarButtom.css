@@ -1,0 +1,24 @@
+.car-container{
+    position: relative;
+}
+
+.car-icon{
+    font-size: 30px;
+    color: rgb(228, 220, 220);
+    cursor: pointer;
+}
+
+.car-count-container{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color:  rgb(228, 220, 220); 
+}
+
+.car-count{
+    font-size: 10px;
+    color: #bdb1a6;
+}

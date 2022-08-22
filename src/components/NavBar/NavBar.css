@@ -1,35 +1,26 @@
-.header{
+.nav-header{
     color: rgb(228, 220, 220);
     font-family: 'Quicksand', sans-serif;
+    background-color: #bdb1a6;
+    border-bottom: black
 }
-.logo{
+.nav-logo{
     font-size: 50px;
     text-decoration: none;
     color: rgb(228, 220, 220);
 }
-.logo:hover {
+.nav-logo:hover {
     color: rgb(228, 220, 220);
     transition: 0.5s;
 }
 
-.header{
-    background-color: #bdb1a6;
-    border-bottom: black
-   }
-
-.carrito{
-    font-size: 30px;
-    color: rgb(228, 220, 220);
-    cursor: pointer;
-}
-
-.nav_link{
+.nav-link{
     font-weight: lighter;
     font-size: 20px;
     color: rgb(228, 220, 220);
 }
 
-.nav_link:hover {
+.nav-link:hover {
     color: white;
     transition: 0.5s;
 }
