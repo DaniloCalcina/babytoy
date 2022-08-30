@@ -1,0 +1,41 @@
+.producto{
+    color: #bdb1a6;
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgb(228, 220, 220);
+}
+
+.item-image-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 5px;
+   margin: 5px;
+   border: 3px solid #bdb1a6 ;
+   border-radius: 18%;
+}
+
+.item-nombre{
+    font-size: 20px;
+    color:#bdb1a6;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+}
+
+.item-price{
+    color: black;
+    font-size: 25px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container{
+    width: 20%;
+    height: 30%;
+    background-color:  rgb(228, 220, 220);
+    
+}
+
+.detail-button{
+    background-color: #bdb1a6;
+    color: rgb(228, 220, 220);
+    font-weight: bolder;
+}

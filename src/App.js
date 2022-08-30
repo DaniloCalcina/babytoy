@@ -1,7 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
-import ItemList from './components/ItemList/ItemList';
+import {ItemListContainer} from './components/ItemListContainer/ItemListContainer';
 
 
 
@@ -9,8 +8,8 @@ function App() {
   return (
     <div className='MainContainer d-flex flex-column align-items-center'>
       <NavBar/>
-      <ItemList/>
-    </div>
+      <ItemListContainer/>
+      </div>
   );
 }
 

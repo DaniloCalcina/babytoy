@@ -1,0 +1,19 @@
+.count-container{
+    margin-top: 50px;
+    font-size: 20px;
+}
+.count_button{
+    color:#bdb1a6;
+}
+
+.display_count{
+    width: 30px;
+    background-color: #bdb1a6;
+    color: rgb(228, 220, 220);
+    border-radius: 20%;
+}
+
+.cart_button{
+    background-color: #bdb1a6;
+    color: rgb(228, 220, 220);
+}

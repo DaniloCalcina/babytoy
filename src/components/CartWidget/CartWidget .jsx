@@ -1,7 +1,7 @@
-import './CarButtom.css'
+import './CartWidget .css'
 import{BsCart4} from "react-icons/bs";
 
-const CarButtom= ()=>{
+const CartButton = ()=>{
     return(
         <div className="d-flex flex-column me-3 align-items-center car-container">
             <BsCart4 className='car-icon'/>
@@ -13,4 +13,4 @@ const CarButtom= ()=>{
     )
 }
 
-export default CarButtom;
+export default CartButton ;

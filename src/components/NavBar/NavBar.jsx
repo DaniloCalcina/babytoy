@@ -1,5 +1,5 @@
 import './NavBar.css'
-import CarButtom from '../CarButtom/CarButtom';
+import CartButton from '../CartWidget/CartWidget ';
 
 
 const NavBar =()=> {
@@ -20,7 +20,7 @@ const NavBar =()=> {
                         <span className='nav-link me-5'>Contacto</span>
                     </div>
                     <div className="d-flex me-5 align-items-center">
-                        <CarButtom/>
+                        <CartButton/>
                     </div>
                 </div>
             </div>
