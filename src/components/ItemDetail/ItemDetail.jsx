@@ -1,9 +1,9 @@
 import "./ItemDetail.css";
 import ItemCount from "../ItemCount/ItemCount"
 
-export const ItemDetail=({producto})=>{
+const ItemDetail=({producto})=>{
     return(
-        <div className="container-fluid d-flex flex-column justify-content-center producto">
+        <div className="container-fluid d-flex flex-column justify-content-center pb-5 pt-5 producto">
             <div className="container-md d-flex justify-content-center">
                 <div className="d-flex">
                     <div className="me-3 d-flex">
@@ -30,3 +30,5 @@ export const ItemDetail=({producto})=>{
         </div>
    )
 }
+
+export default ItemDetail;

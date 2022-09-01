@@ -1,20 +1,16 @@
-import React, {Component} from "react";
 import "./ItemList.css";
-import {Item} from "../Item/Item";
+import Item from "../Item/Item";
 
 
-export const ItemList =({data=[]})=>{
-    
+const ItemList = ({productos}) => {
+
     return(
-        <div className= "row">
-            {data.map((producto) =>{
-                return(
-                    <div>
-                        <Item key= {producto.id} producto={producto} />
-                    </div>
-                )
-            })}
+        <div className= "d-flex flex-wrap container_list m-3 p-3">
+            {productos.map(producto =>(                                
+                <Item key = {producto.id} producto={producto} />                            
+            ))}
         </div>
     )
 }
 
+export default ItemList;

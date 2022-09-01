@@ -1,21 +1,19 @@
 import React from "react";
 import "./Item.css";
 
-export const Item =({producto})=>{
+const Item =({producto})=>{
     
 return(
-    <div className="container">
-        <div className="me-3">
-            <div className="item-image-container">
-                <img src={producto.imagen1} alt="" width={200} height={200} />
-            </div>
-            <div className="me-3 d-flex flex-column justify-content-center align-items-center">
-                <h1 className="item-nombre ms-2.5 me-2.5">{producto.nombre}</h1>
-                <p className="item-price">{producto.valor}</p>
-                <button className="btn btn*primary detail-button">Ver Detalles</button>
-            </div>
-
+    <div className="m-3 p-3 d-flex flex-column justify-content-center align-items-center">
+        <div className="item-image-container d-flex flex-column justify-content-center align-items-center">
+            <img src={producto.imagen1} alt="" width={200} height= {200} />    
+        </div>
+        <div className="container-texto d-flex flex-column justify-content-center align-items-center">
+            <h1 className="item-nombre ms-3 p-3">{producto.nombre}</h1>
+            <h3 className="item-price">{producto.valor}</h3>
+            <button className="btn detail-button">Ver Detalles</button>
         </div>
     </div>
 )
 }
+export default Item;

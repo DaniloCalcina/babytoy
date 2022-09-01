@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+.MainContainer{
+background-color: rgb(228, 220, 220);
+}

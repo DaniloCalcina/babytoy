@@ -17,3 +17,12 @@
     background-color: #bdb1a6;
     color: rgb(228, 220, 220);
 }
+.carrito_button{
+    background-color: #bdb1a6;
+    color: rgb(228, 220, 220);
+}
+
+.carrito_button:hover{
+    transition: 0.2s all ease;
+    
+}
