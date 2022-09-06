@@ -28,7 +28,18 @@ width: 250px;
 
 .detail-button{
     background-color: #bdb1a6;
-    color: rgb(228, 220, 220);
-    font-weight: bolder;
+    color:rgb(228,220,220);
     text-decoration: none;
+    border: 1px solid #bdb1a6 ;
+    border-radius: 7%;
+    overflow: hidden;
+}
+
+.detail-button:hover{
+    background-color: #bdb1a6;
+    color:rgb(228,220,220);
+}
+
+.container_card{
+    border: 3px solid #bdb1a6 ;   
 }

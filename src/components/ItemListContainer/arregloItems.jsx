@@ -7,7 +7,8 @@ const arregloItems= [
         imagen1: "https://http2.mlstatic.com/D_NQ_NP_2X_805186-MLA50224697868_062022-F.webp",
         imagen2: "https://http2.mlstatic.com/D_NQ_NP_2X_659152-MLA50224874024_062022-F.webp",
         imagen3: "https://http2.mlstatic.com/D_NQ_NP_2X_958736-MLA50224834273_062022-F.webp",
-        id:1
+        id:1,
+        categoryid: "Juguetes"
     },
     {
         nombre: 'Peludito Shine Orangután',
@@ -16,7 +17,8 @@ const arregloItems= [
         imagen1: "https://http2.mlstatic.com/D_NQ_NP_2X_903346-MLA50225033532_062022-F.webp",
         imagen2: "https://http2.mlstatic.com/D_NQ_NP_2X_894436-MLA50236549544_062022-F.webp",
         imagen3: "https://http2.mlstatic.com/D_NQ_NP_2X_781828-MLA50236398971_062022-F.webp",
-        id:2
+        id:2,
+        categoryid: "Juguetes"
     },
     {
         nombre: 'Pizarra Mágica 2 en 1. Magnética y Pizarrón',
@@ -25,7 +27,8 @@ const arregloItems= [
         imagen1: "https://http2.mlstatic.com/D_NQ_NP_2X_848800-MLA51002746525_082022-F.webp",
         imagen2: "https://http2.mlstatic.com/D_NQ_NP_2X_768583-MLA51002746653_082022-F.webp",
         imagen3: "https://http2.mlstatic.com/D_NQ_NP_2X_658262-MLA51002860056_082022-F.webp",
-        id:3
+        id:3,
+        categoryid: "Juguetes"
     },
     {
         nombre: 'Pistola Arma Juguete X-SHOT 1164',
@@ -34,7 +37,8 @@ const arregloItems= [
         imagen1: "https://http2.mlstatic.com/D_NQ_NP_2X_942475-MLA43077428738_082020-F.webp",
         imagen2: "https://http2.mlstatic.com/D_NQ_NP_2X_789025-MLA31356057616_072019-F.webp",
         imagen3: "https://http2.mlstatic.com/D_NQ_NP_2X_950003-MLA30718962066_052019-F.webp",
-        id:4
+        id:4,
+        categoryid: "Juguetes"
     },
     {
         nombre: 'Practicuna Colecho Joei Sleep Creciendo',
@@ -43,7 +47,8 @@ const arregloItems= [
         imagen1: "https://http2.mlstatic.com/D_NQ_NP_2X_685280-MLA40528823923_012020-F.webp",
         imagen2: "https://http2.mlstatic.com/D_NQ_NP_2X_630665-MLA50953222689_082022-F.webp",
         imagen3: "https://http2.mlstatic.com/D_NQ_NP_2X_825789-MLA40529022951_012020-F.webp",
-        id:5
+        id:5,
+        categoryid: "PracticunaCoche"
     },
     {
         nombre: 'Coche Mega Baby Convertible 3 en 1',
@@ -52,7 +57,8 @@ const arregloItems= [
         imagen1: "https://http2.mlstatic.com/D_NQ_NP_2X_701706-MLA50517059076_062022-F.webp",
         imagen2: "https://http2.mlstatic.com/D_NQ_NP_2X_622659-MLA50517069039_062022-F.webp",
         imagen3: "https://http2.mlstatic.com/D_NQ_NP_2X_785561-MLA50516871701_062022-F.webp",
-        id:6
+        id:6,
+        categoryid: "PracticunaCoche"
     },
     {
         nombre: 'Set de Mamaderas Avent',
@@ -61,7 +67,8 @@ const arregloItems= [
         imagen1: "https://http2.mlstatic.com/D_NQ_NP_2X_763376-MLA48699121290_122021-F.webp",
         imagen2: "https://http2.mlstatic.com/D_NQ_NP_2X_852884-MLA48699097387_122021-F.webp",
         imagen3: "https://http2.mlstatic.com/D_NQ_NP_2X_879132-MLA48699041560_122021-F.webp",
-        id:7
+        id:7,
+        categoryid: "MamaderaChupete"
     },
     {
         nombre: 'Chupetes Avent Silicona Air Night',
@@ -70,7 +77,8 @@ const arregloItems= [
         imagen1: "https://http2.mlstatic.com/D_NQ_NP_2X_940118-MLA49327050661_032022-F.webp",
         imagen2: "https://http2.mlstatic.com/D_NQ_NP_2X_940118-MLA49327050661_032022-F.webp",
         imagen3: "https://http2.mlstatic.com/D_NQ_NP_2X_940118-MLA49327050661_032022-F.webp",
-        id:8
+        id:8,
+        categoryid: "MamaderaChupete"
     },
     {
         nombre: 'Guarda Chupete de Bebe',
@@ -79,7 +87,8 @@ const arregloItems= [
         imagen1: "https://http2.mlstatic.com/D_NQ_NP_2X_994975-MLA44782726463_022021-F.webp",
         imagen2: "	https://http2.mlstatic.com/D_NQ_NP_2X_625201-MLA43846632505_102020-F.webp",
         imagen3: "	https://http2.mlstatic.com/D_NQ_NP_2X_639238-MLA43846647325_102020-F.webp",
-        id:9
+        id:9,
+        categoryid: "MamaderaChupete"
     },
     {
         nombre: 'Esterilizador Mamaderas Avent Philips',
@@ -88,7 +97,8 @@ const arregloItems= [
         imagen1: "https://http2.mlstatic.com/D_NQ_NP_2X_719948-MLA31114477657_062019-F.webp",
         imagen2: "https://http2.mlstatic.com/D_NQ_NP_2X_839804-MLA31114472803_062019-F.webp",
         imagen3: "https://http2.mlstatic.com/D_NQ_NP_2X_621061-MLA31114474245_062019-F.webp",
-        id:10
+        id:10,
+        categoryid: "MamaderaChupete"
     },
     {
         nombre: 'Practicuna Plegable para Bebe',
@@ -97,7 +107,8 @@ const arregloItems= [
         imagen1: "https://http2.mlstatic.com/D_NQ_NP_2X_795760-MLA51165753272_082022-F.webp",
         imagen2: "https://http2.mlstatic.com/D_NQ_NP_2X_983015-MLA51165718394_082022-F.webp",
         imagen3: "https://http2.mlstatic.com/D_NQ_NP_2X_899614-MLA51165799009_082022-F.webp",
-        id:11
+        id:11,
+        categoryid: "PracticunaCoche"
     },
     {
         nombre: 'Cochecito Con Huevito Cuna Bebé Travel System Mega Baby Ata En Creciendo Oficial',
@@ -106,7 +117,8 @@ const arregloItems= [
         imagen1: "https://http2.mlstatic.com/D_NQ_NP_2X_740091-MLA46177267064_052021-F.webp",
         imagen2: "https://http2.mlstatic.com/D_NQ_NP_2X_740091-MLA46177267064_052021-F.webp",
         imagen3: "https://http2.mlstatic.com/D_NQ_NP_2X_737943-MLA43775750289_102020-F.webp",
-        id:12
+        id:12,
+        categoryid: "PracticunaCoche"
     },
 ]
 
@@ -116,8 +128,10 @@ export const ObtenerItem = new Promise ((resolve, reject) =>{
     },2000)
 })
 
-export const getItem = new Promise ((resolve, reject) =>{
-    setTimeout (()=>{
-        resolve(arregloItems[4])
-    },2000)
-})
+export const getItem = (id)=>{
+    return new Promise ((resolve, reject) =>{
+        setTimeout (()=>{
+            resolve (arregloItems.find(item=>item.id===id))
+        },2000)
+    });
+}
