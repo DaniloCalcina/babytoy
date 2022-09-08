@@ -31,3 +31,19 @@
     font-size: 25px;
     font-family: 'Quicksand', sans-serif;
 }
+
+.carrito_button{
+    background-color: #bdb1a6;
+    color:rgb(228,220,220);
+    font-weight: bolder;
+    text-decoration: none;
+    border: 1px solid #bdb1a6 ;
+    border-radius: 7%;
+    overflow: hidden;
+}
+
+.carrito_button:hover{
+    transition: 0.2s all ease;
+    background-color: #bdb1a6;
+    color:rgb(228,220,220);
+}
