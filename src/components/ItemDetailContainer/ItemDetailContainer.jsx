@@ -13,12 +13,11 @@ const [isLoaded,SetisLoaded]= useState (false);
 useEffect(()=>{
     getItem(parseInt(id)).then(producto=>{ /* definida en arregloItems */ 
         if(producto){
-            console.log(producto)
             setProducto(producto)
             SetisLoaded(true)
         }    
     })        
-},[])
+},[id])
 
     if (isLoaded){
         return(

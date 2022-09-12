@@ -36,18 +36,22 @@ const ItemDetail=({producto})=>{
                     <div className="me-3">
                         <h1 className="item-detail-nombre">{producto.nombre}</h1>
                         <p className="item-detail-description">{producto.descripcion}</p>
-                        <p className="item-detail-price">{producto.valor}</p>
-                        <ItemCount count ={count} onCount={onCount} />
+                        <p className="item-detail-price m-5">{producto.valor}</p>
+                        
                         {
                             !goToCart?
                             <>
                                 <div className="">
-                                    <button onClick={()=> onCart ()} className="btn carrito_button ms-3">Agregar al Carrito</button>   
+                                     <ItemCount count ={count} onCount={onCount} />
+                                    <button onClick={()=> onCart ()} className="btn-block carrito_button ms-3">Agregar al Carrito</button>   
                                 </div>
                             </>
                             :
                             <>
-                                <Link to="/cart" className="btn carrito_button ms-3"> Finalizar Compra</Link>
+                            <div className="d-flex flex-column">
+                                <Link to="/" className="btn-sm carrito_button m-3 p-3">Continuar Comprando</Link>
+                                <Link to="/cart" className="btn-sm carrito_button m-3 p-3"> Finalizar Compra</Link>
+                            </div>
                             </>
                         }
                     </div>
