@@ -11,7 +11,7 @@ return(
         </div>
         <div className="container-texto d-flex flex-column justify-content-center align-items-center">
             <h1 className="item-nombre ms-3 p-3">{producto.nombre}</h1>
-            <h3 className="item-price">{producto.valor}</h3>
+            <h3 className="item-price">$ {producto.valor}</h3>
             <Link to ={ID} className="detail-button p-2">Ver Detalle</Link>
         </div>
     </div>

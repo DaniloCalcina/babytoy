@@ -1,9 +1,12 @@
 import './NavBar.css'
 import CartButton from '../CartWidget/CartWidget ';
 import { Link } from 'react-router-dom';
+import { useCartContext } from "../../context/CartContext";
 
 
 const NavBar =()=> {
+    const {totalItems} =useCartContext ();
+ 
     return (
         <nav className="container-fluid nav-header p-0">
             <div className="container-fluid p-0 d-flex justify-content-between">
@@ -20,9 +23,17 @@ const NavBar =()=> {
                         <Link to= "productos/PracticunaCoche" className='nav-link me-5'>Practicunas y Coches </Link>
                         <Link to="/contacto" className='nav-link me-5'> Contacto</Link>
                     </div>
-                    <div className="d-flex me-5 align-items-center">
-                        <CartButton/>
-                    </div>
+                    {
+                    totalItems()!== 0?
+                    <>
+                        <div className="d-flex me-5 align-items-center">
+                            <CartButton/>
+                        </div>
+                    </>
+                    :
+                    <>
+                    </>    
+                    }
                 </div>
             </div>
         </nav> 

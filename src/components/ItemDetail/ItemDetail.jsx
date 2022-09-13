@@ -15,6 +15,7 @@ const ItemDetail=({producto})=>{
         setGoToCart (true);
         addToCart (producto, count);
     } 
+   
 
     return(
         <div className="container-fluid d-flex flex-column justify-content-center pb-5 pt-5 producto">
@@ -36,7 +37,7 @@ const ItemDetail=({producto})=>{
                     <div className="me-3">
                         <h1 className="item-detail-nombre">{producto.nombre}</h1>
                         <p className="item-detail-description">{producto.descripcion}</p>
-                        <p className="item-detail-price m-5">{producto.valor}</p>
+                        <p className="item-detail-price m-5">$ {producto.valor}</p>
                         
                         {
                             !goToCart?

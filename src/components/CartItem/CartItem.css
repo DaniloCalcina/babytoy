@@ -1,0 +1,13 @@
+.item-cart-container{
+    background-color: #bdb1a6;
+    color:rgb(228, 220, 220);
+    font-family: 'Quicksand', sans-serif;
+    border: 5px ridge rgb(228, 220, 220);
+    
+
+}
+.trash-icon{
+    font-size: 27px;
+    color: rgb(228, 220, 220);
+    cursor: pointer;
+}
