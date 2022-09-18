@@ -1,5 +1,5 @@
 import "./ItemDetailContainer.css";
-import { getItem } from "../ItemListContainer/arregloItems";
+import { getItem } from "../../utils/FireBase";
 import React, {useEffect,useState} from "react";
 import ItemDetail  from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
@@ -11,11 +11,14 @@ const [producto, setProducto] =useState({});
 const [isLoaded,SetisLoaded]= useState (false);
     
 useEffect(()=>{
-    getItem(parseInt(id)).then(producto=>{ /* definida en arregloItems */ 
-        if(producto){
-            setProducto(producto)
-            SetisLoaded(true)
-        }    
+    getItem((id)).then(prod=>{ /* definida en arregloItems */ 
+    console.log(prod)
+    if(prod.exists()){
+        setProducto({id:prod.id,...prod.data()});
+        SetisLoaded(true);
+    }else{
+        console.log("No hay documento");
+    }    
     })        
 },[id])
 

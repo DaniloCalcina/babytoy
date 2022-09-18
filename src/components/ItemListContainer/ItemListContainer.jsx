@@ -1,7 +1,7 @@
 import "./ItemListContainer.css";
 import React, {useEffect,useState} from "react";
 import ItemList from '../ItemList/ItemList';
-import {ObtenerItem} from './arregloItems';
+import {ObtenerItem} from '../../utils/FireBase';
 import { useParams } from "react-router-dom";
 
 export const ItemListContainer= ()=>{
@@ -10,13 +10,13 @@ const {tipoProducto}= useParams();
 const [productos, setProductos] =useState([]);
     
 useEffect(()=>{
-    ObtenerItem.then(productos=>{ /* definida en arregloItems */
-        if(!tipoProducto){
-            setProductos(productos)
-        } else {
-            const Filtrado= productos.filter(item=>item.categoryid=== tipoProducto)
-            setProductos(Filtrado)
-        }
+    ObtenerItem(tipoProducto).then(prod=>{ /* definida en arregloItems */
+    const data = prod.docs.map (doc =>{
+        const laData= doc.data();
+        return {...laData,id:doc.id};
+    })
+        console.log("productos",data);
+        setProductos(data);    
     })        
 },[tipoProducto])
 

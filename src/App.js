@@ -1,11 +1,12 @@
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import  ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import {Route,Routes,BrowserRouter} from 'react-router-dom';
 import { PaginaContacto } from './components/PaginaContacto/PaginaContacto';
 import {CartProvider} from './context/CartContext';
 import CartContainer from './components/CartContainer/CartContainer';
+
 
 function App() {
   return (

@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 function CartContainer() {
     const {cart:carrito}=useCartContext();
-    const {totalItems,totalPrice} =useCartContext ();
+    const {totalItems,totalPrice,clearCart} =useCartContext ();
 
     return (
     <>
@@ -23,14 +23,17 @@ function CartContainer() {
             :
             <>
                 <div className="container-md d-flex flex-column">
-                    <div className="container-md container-cart d-flex justify-content-center align-items center flex-column mt-2"> 
-                        <div className="container-md d-flex justify-content-center cart-titles m-1"> Carrito</div>
+                    <div className="container-md container-cart d-flex justify-content-center align-items center flex-column mt-2">
+                        <div className="d-flex flex-row justify-content-between cart-totals"> 
+                            <div className="container-md d-flex justify-content-center cart-titles m-1"> Carrito</div>
+                            <div onClick={()=>clearCart()} className=" m-1 p-1 clear_button"> Vaciar Carrito</div>
+                        </div>
                     {carrito.map(producto =>(                                
                         <CartItem key = {producto.id} producto={producto} />                            
                     ))}          
-                     </div>
+                    </div>
                     <div className="container-md d-flex flex-row justify-content-between cart-totals">
-                         <div className="m-1 cart-titles">Total</div>
+                        <div className="m-1 cart-titles">Total</div>
                         <div className="m-1">Cantidad de Productos: {totalItems()}</div>
                         <div className="m-1">Total: $ {totalPrice()}</div>
                     </div>

@@ -9,11 +9,11 @@ const ItemDetail=({producto})=>{
 
     const [goToCart,setGoToCart] = useState (false);
     const [count, setCount] =useState(1);
-    const {addToCart} =useCartContext ();
+    const {addToCart,isInCart,setQuantity,cart} =useCartContext ();
     const onCount= (newQuantity) => {setCount(newQuantity)};
     const onCart =()=> {
-        setGoToCart (true);
-        addToCart (producto, count);
+        if (isInCart(producto.id)){setQuantity(cart.find(prod=>producto.id===prod.id),count);}
+        else {setGoToCart (true);addToCart (producto, count);}            
     } 
    
 

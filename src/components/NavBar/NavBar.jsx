@@ -26,9 +26,9 @@ const NavBar =()=> {
                     {
                     totalItems()!== 0?
                     <>
-                        <div className="d-flex me-5 align-items-center">
+                        <Link to="/cart" className="d-flex me-5 align-items-center">
                             <CartButton/>
-                        </div>
+                        </Link>
                     </>
                     :
                     <>
