@@ -12,7 +12,7 @@ const ItemDetail=({producto})=>{
     const {addToCart,isInCart,setQuantity,cart} =useCartContext ();
     const onCount= (newQuantity) => {setCount(newQuantity)};
     const onCart =()=> {
-        if (isInCart(producto.id)){setQuantity(cart.find(prod=>producto.id===prod.id),count);}
+        if (isInCart(producto.id)){setGoToCart (true); setQuantity(cart.find(prod=>producto.id===prod.id),count);}
         else {setGoToCart (true);addToCart (producto, count);}            
     } 
    
@@ -51,7 +51,7 @@ const ItemDetail=({producto})=>{
                             <>
                             <div className="d-flex flex-column">
                                 <Link to="/" className="btn-sm carrito_button m-3 p-3">Continuar Comprando</Link>
-                                <Link to="/cart" className="btn-sm carrito_button m-3 p-3"> Finalizar Compra</Link>
+                                <Link to="/cart" className="btn-sm carrito_button m-3 p-3">Ir al Carrito</Link>
                             </div>
                             </>
                         }

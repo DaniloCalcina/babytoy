@@ -10,12 +10,11 @@ const {tipoProducto}= useParams();
 const [productos, setProductos] =useState([]);
     
 useEffect(()=>{
-    ObtenerItem(tipoProducto).then(prod=>{ /* definida en arregloItems */
+    ObtenerItem(tipoProducto).then(prod=>{ 
     const data = prod.docs.map (doc =>{
         const laData= doc.data();
         return {...laData,id:doc.id};
     })
-        console.log("productos",data);
         setProductos(data);    
     })        
 },[tipoProducto])

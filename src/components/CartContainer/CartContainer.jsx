@@ -4,10 +4,9 @@ import CartItem  from "../CartItem/CartItem";
 import { useCartContext } from "../../context/CartContext";
 import { Link } from "react-router-dom";
 
-
 function CartContainer() {
-    const {cart:carrito}=useCartContext();
-    const {totalItems,totalPrice,clearCart} =useCartContext ();
+
+const {totalItems,totalPrice,clearCart,cart:carrito} =useCartContext ();
 
     return (
     <>
@@ -37,6 +36,9 @@ function CartContainer() {
                         <div className="m-1">Cantidad de Productos: {totalItems()}</div>
                         <div className="m-1">Total: $ {totalPrice()}</div>
                     </div>
+                    <div className="d-flex justify-content-center">
+                    <Link to='/loginin' className="btn-sm carrito_button m-1 p-1">Terminar Compra</Link>
+                    </div>
                 </div>
             </>
         }
@@ -44,4 +46,5 @@ function CartContainer() {
     );
 }
 
-export default CartContainer
+
+export default CartContainer;

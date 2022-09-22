@@ -12,7 +12,6 @@ const [isLoaded,SetisLoaded]= useState (false);
     
 useEffect(()=>{
     getItem((id)).then(prod=>{ /* definida en arregloItems */ 
-    console.log(prod)
     if(prod.exists()){
         setProducto({id:prod.id,...prod.data()});
         SetisLoaded(true);

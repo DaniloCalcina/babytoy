@@ -2,6 +2,7 @@ import './NavBar.css'
 import CartButton from '../CartWidget/CartWidget ';
 import { Link } from 'react-router-dom';
 import { useCartContext } from "../../context/CartContext";
+import {sendOrder} from "../../utils/FireBase"
 
 
 const NavBar =()=> {

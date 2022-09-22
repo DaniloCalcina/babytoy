@@ -1,0 +1,34 @@
+#principal-container{
+    place-items: center center;
+    font-family: 'Quicksand', sans-serif;
+    color: #bdb1a6;
+}
+
+#sign-in-form{
+    max-width: 330px;
+}
+.form-control:focus{
+    z-index: 5;
+}
+
+.logIn-title{
+    font-size: 25px;
+}
+
+.registry_button{
+    width: 200px;
+    background-color: #bdb1a6;
+    color:rgb(228,220,220);
+/*     font-weight: bolder; */
+    text-decoration: none;
+    border: 1px solid #bdb1a6 ;
+    border-radius: 5%;
+    font-size: 20px;
+/*     overflow: hidden; */
+}
+
+.registry_button:hover{
+    transition: 0.2s all ease;
+    background-color: #bdb1a6;
+    color:rgb(228,220,220);
+}
