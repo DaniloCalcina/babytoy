@@ -1,5 +1,7 @@
 import { initializeApp } from "firebase/app";
-import {collection, getDocs , doc , getDoc , getFirestore, where, query} from 'firebase/firestore';
+import {collection, getDocs , doc , getDoc , getFirestore, where, query, setDoc, addDoc, serverTimestamp} from 'firebase/firestore';
+import { useState } from "react";
+
 
 const firebaseConfig = {
   apiKey: "AIzaSyAIAgs4hYazSY1enJ2Z2Kv7oYdJqkTQjRQ",
@@ -31,8 +33,46 @@ export const ObtenerItem = (category) => {
 /* Para traer un solo documento  */
 
 export const getItem = (id)=>{
-  const query =doc (db, "productos",id);
-  return getDoc(query);
+  const d =doc (db, "productos",id);
+  return getDoc(d);
 }
 
+/* Para subir a Firebase */
+ export const sendItem= (order)=>{
+    const [idOrder,setIdOrder]=useState('');
+    const o = collection (db,'orders');
+    addDoc(o,{...order,fecha: serverTimestamp()})
+ }
+/* Formulario Dinamico */
 
+/*   const ordersCollection= collection(db,"orders");
+  addDoc(ordersCollection,order)/* . then(({id})=>setOrderId (id)) */
+
+
+
+
+//Codigo Mario 
+/* const onFinishShoping = () =>{
+  const order = {
+    buyer:{
+      buyerId:userLogin.id;
+      nombre:userLogin.nombre;
+      appellidos:userLogin.apellidos;
+      direccion:userLogin.direccion;
+      telefono:userLogin.telefono;
+    },
+    items:cart,
+    total:totalPrice()
+  };
+  addDoc(collection(db,"orders"),{...order,
+  fecha: serverTimestamp()}).then(()=>{
+    cleanCart();
+    setFinShopping(true);
+  });
+} */
+
+
+/* Para subir el carrito */
+/* const updateUserProfile = (userId, userProfileData) => {
+  return setDoc(doc(db, "profiles", userId), {...userProfileData, id: userId});
+};  */
