@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app";
-import {collection, getDocs , doc , getDoc , getFirestore, where, query, setDoc, addDoc, serverTimestamp} from 'firebase/firestore';
-import { useState } from "react";
+import {collection, getDocs , doc , getDoc , getFirestore, where, query, addDoc, serverTimestamp} from 'firebase/firestore';
+
 
 
 const firebaseConfig = {
@@ -39,7 +39,6 @@ export const getItem = (id)=>{
 
 /* Para subir a Firebase */
  export const sendItem= (order)=>{
-    const [idOrder,setIdOrder]=useState('');
     const o = collection (db,'orders');
     addDoc(o,{...order,fecha: serverTimestamp()})
  }
