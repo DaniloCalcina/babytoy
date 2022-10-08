@@ -1,5 +1,5 @@
 #principal-container{
-    place-items: center center;
+    place-items: center center !important;
     font-family: 'Quicksand', sans-serif;
     color: #bdb1a6;
 }
@@ -31,4 +31,8 @@
     transition: 0.2s all ease;
     background-color: #bdb1a6;
     color:rgb(228,220,220);
+}
+
+.dropdown-menu {
+    --bs-dropdown-bg: #bdb1a6;
 }

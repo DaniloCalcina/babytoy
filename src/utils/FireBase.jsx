@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
 import {collection, getDocs , doc , getDoc , getFirestore, where, query, addDoc, serverTimestamp} from 'firebase/firestore';
+import { getAuth, createUserWithEmailAndPassword,signOut, signInWithEmailAndPassword  } from "firebase/auth";
 
 
 
@@ -15,6 +16,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 export const db= getFirestore (app);
+export const auth = getAuth(app);
 
 
 /* Para armar el arreglo desde firebase */
@@ -37,41 +39,26 @@ export const getItem = (id)=>{
   return getDoc(d);
 }
 
-/* Para subir a Firebase */
- export const sendItem= (order)=>{
+  export const sendItem= (order)=>{
     const o = collection (db,'orders');
     addDoc(o,{...order,fecha: serverTimestamp()})
- }
-/* Formulario Dinamico */
+  }
+  export const getCart =(id)=>{
+    const c = doc(db,'orders',id)
+    return getDoc(c);
+  }
 
-/*   const ordersCollection= collection(db,"orders");
-  addDoc(ordersCollection,order)/* . then(({id})=>setOrderId (id)) */
+  export const sendBuyer = (buyer)=>{ 
+    const b = collection (db,'users');
+    addDoc(b)
+  }
 
+//Creacion Usuario
+export const createUser = (email, password) =>  
+ createUserWithEmailAndPassword( auth, email, password);
+  
+export const signInUser = (email, password) =>
+  signInWithEmailAndPassword(auth, email, password);
 
-
-
-//Codigo Mario 
-/* const onFinishShoping = () =>{
-  const order = {
-    buyer:{
-      buyerId:userLogin.id;
-      nombre:userLogin.nombre;
-      appellidos:userLogin.apellidos;
-      direccion:userLogin.direccion;
-      telefono:userLogin.telefono;
-    },
-    items:cart,
-    total:totalPrice()
-  };
-  addDoc(collection(db,"orders"),{...order,
-  fecha: serverTimestamp()}).then(()=>{
-    cleanCart();
-    setFinShopping(true);
-  });
-} */
-
-
-/* Para subir el carrito */
-/* const updateUserProfile = (userId, userProfileData) => {
-  return setDoc(doc(db, "profiles", userId), {...userProfileData, id: userId});
-};  */
+export const signOutUser =() =>
+  signOut(auth); 
