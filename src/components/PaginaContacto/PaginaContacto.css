@@ -6,7 +6,9 @@
     color: #bdb1a6;
     font-size: 20px;
 }
-
+.container-page{
+    height: 90vh;
+}
 .text_logo{
     font-family: 'Quicksand', sans-serif;
     color: #bdb1a6;

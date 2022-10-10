@@ -23,7 +23,7 @@ useEffect(()=>{
 
     if (isLoaded){
         return(
-            <div className="">
+            <div className="detail_container">
                 <ItemDetail producto = {producto}/>  
             </div>
         )

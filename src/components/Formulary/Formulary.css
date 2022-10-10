@@ -7,6 +7,7 @@
 #sign-in-form{
     max-width: 330px;
 }
+
 .form-control:focus{
     z-index: 5;
 }
@@ -35,4 +36,11 @@
 
 .dropdown-menu {
     --bs-dropdown-bg: #bdb1a6;
+}
+
+.text_logo{
+    font-family: 'Quicksand', sans-serif;
+    color: #bdb1a6;
+    font-weight: bolder;
+    font-size: 100px;
 }

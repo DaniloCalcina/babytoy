@@ -7,7 +7,6 @@ import { PaginaContacto } from './components/PaginaContacto/PaginaContacto';
 import {CartProvider} from './context/CartContext';
 import CartContainer from './components/CartContainer/CartContainer';
 import Formulary from './components/Formulary/Formulary'
-import { OrderContainer } from './components/OrderContainer/OrderContainer';
 import { UserProvider } from './context/UserContext';
 
 
@@ -27,7 +26,6 @@ function App() {
               <Route path='/producto/:id' element={<ItemDetailContainer/>} />
               <Route path='/cart' element={<CartContainer/>}/>
               <Route path='/loginin' element={<Formulary/>}/>
-              <Route path='/orders' element={<OrderContainer/>}/>
             </Routes> 
           </div>
         </CartProvider>

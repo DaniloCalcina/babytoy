@@ -5,6 +5,7 @@ export const useCartContext = () => useContext(CartContext);
 
 export const CartProvider = ({children}) => {
   const [cart,setCart] = useState ([]);
+
   const addToCart = (producto, newQuantity) =>{
   let newCart= cart.map(element=> element) ;
   newCart.push ({...producto, quantity: newQuantity});

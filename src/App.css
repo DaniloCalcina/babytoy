@@ -1,6 +1,12 @@
 .App {
   text-align: center;
 }
+html, body{
+  display: flex;
+  flex-direction: column;
+  height:100vh;
+  margin :0 ;
+}
 
 .App-logo {
   height: 40vmin;
@@ -41,6 +47,6 @@
 }
 
 .MainContainer{
-background-color: rgb(228, 220, 220);
-height: 100vh;
+background-color: rgb(228, 220, 220) !important;
+height: 100%;
 }

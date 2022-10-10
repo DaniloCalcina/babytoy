@@ -18,12 +18,6 @@ const NavBar =()=> {
     }
  
     return (
- /*        {userLogin?
-        <> 'Verdadero'
-    </>
-    :   
-    <> 'Falso'
-    </>}   */   
         <nav className="container-fluid nav-header p-0">
             <div className="container-fluid p-0 d-flex justify-content-between">
                 <div className="d-flex align-items-center ms-5">
@@ -56,15 +50,6 @@ const NavBar =()=> {
                                 <DropdownItem><Link to= "productos/PracticunaCoche" className='nav-link me-5'>Practicunas y Coches </Link></DropdownItem>     
                             </DropdownMenu>
                         </Dropdown>
-                        {
-                        userLogin?
-                        <>
-                        <Link to="/orders" className='nav-link  ms-3 me-3'> Historial</Link>
-                        </>
-                        :
-                        <>
-                        </>
-                        }
                         <Link to="/contacto" className='nav-link  ms-3 me-5'> Contacto</Link>
                     </div>
                     {

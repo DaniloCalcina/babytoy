@@ -19,13 +19,16 @@
     font-size: 20px !important;
     color: rgb(228, 220, 220) !important;
     background-color: #bdb1a6 !important;
-    height: 40px;
+    height: 30px;
     text-transform: capitalize;
+    cursor: pointer;
 }
 
 .nav-link:hover {
     color: white !important;
     transition: 0.5s !important;
+    background-color: #bdb1a6 !important;
+    text-decoration: none !important;
 }
 
 .menu_button{
@@ -43,6 +46,7 @@
     transition: 0.2s all ease !important;
     background-color: #bdb1a6 !important;
     color:rgb(228,220,220) !important;
+    text-decoration: none !important;
 }
 
 .dropdown_menu{

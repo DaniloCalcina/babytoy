@@ -2,6 +2,10 @@
     background-color:  #bdb1a6;
 }
 
+.page-container{
+height: 90vh;
+}
+
 .cart-totals{
     font-size: 20px;
     background-color:  #bdb1a6;
@@ -15,7 +19,6 @@
     font-weight: bolder;
     color:rgb(228, 220, 220);
     font-family: 'Quicksand', sans-serif;
- /*    border: 5px ridge rgb(228, 220, 220); */
 }
 
 .cart-empty{
@@ -32,11 +35,9 @@
     width: 200px;
     background-color: #bdb1a6;
     color:rgb(228,220,220);
-/*     font-weight: bolder; */
     text-decoration: none;
     border: 1px solid #bdb1a6 ;
     border-radius: 5%;
-/*     overflow: hidden; */
 }
 
 .carrito_button:hover{
@@ -53,6 +54,11 @@
 }
 
 .clear_button:hover{
+    background-color: rgb(228, 220, 220);
+    color: #bdb1a6;
+}
+
+.cartel_container{
     background-color: rgb(228, 220, 220);
     color: #bdb1a6;
 }

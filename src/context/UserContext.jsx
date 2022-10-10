@@ -10,14 +10,16 @@ export const UserProvider = ({children}) => {
     
     const addUser = (user) =>{
         createUser(user.Email , user.Password).then((userCredential) => {
-            setDoc(doc(db, "users", userCredential.user.uid), {id: userCredential.user.uid, ...user}).then ({...user, id:userCredential.user.uid});
-            console.log ('usuario logueado', user);
-        })
-        }
+        setDoc(doc(db, "users", userCredential.user.uid), {...user, id: userCredential.user.uid})
+        .then (() => setUserLogin({...user, id:userCredential.user.uid}));
+        });
+    }
    
-        const verifyUser = (user) =>{
-        signInUser(user.Email, user.Password).then ((userCredential) => {
-            getDoc(doc(db, "users",userCredential.user.uid)).then (u => {setUserLogin (u.data()); console.log ('se logueo',u.data().Name)})
+    const verifyUser = (user) =>{
+        signInUser(user.Email, user.Password)
+        .then ((userCredential) => {
+        getDoc(doc(db, "users",userCredential.user.uid))
+        .then (u => {setUserLogin (u.data()); console.log ('se logueo',u.data().Name)})
         })
     }
     
@@ -26,7 +28,7 @@ export const UserProvider = ({children}) => {
     }
 
     return (
-        <UserContext.Provider value ={{userLogin,addUser, verifyUser , OutUser}}>
+        <UserContext.Provider value ={{userLogin ,addUser, verifyUser , OutUser}}>
             {children}    
         </UserContext.Provider>
       )

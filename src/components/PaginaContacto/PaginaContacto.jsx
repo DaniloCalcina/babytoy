@@ -6,7 +6,7 @@ import{BsFacebook} from "react-icons/bs";
 
 export const PaginaContacto = () => {
   return (
-    <div className='d-flex flex-column justify-content-center align-item-center'>
+    <div className='d-flex flex-column justify-content-center align-item-center container-page'>
       <div className="logo_container d-flex m-5">
         <div className="text_logo me-5">BabyStore</div>
         <img src="assets/leon.png" alt="imagen" height={160} width={200}/>

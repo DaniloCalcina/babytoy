@@ -11,17 +11,17 @@ const [productos, setProductos] =useState([]);
     
 useEffect(()=>{
     ObtenerItem(tipoProducto).then(prod=>{ 
-    const data = prod.docs.map (doc =>{
-        const laData= doc.data();
-        return {...laData,id:doc.id};
-    })
-        setProductos(data);    
+        const data = prod.docs.map (doc =>{
+            const laData= doc.data();
+            return {...laData,id:doc.id};
+        })
+    setProductos(data);    
     })        
 },[tipoProducto])
 
     return(
         <div className="container-fluid p-0 main_container">
-            <div className=" d-flex align-items-center container_producto">
+            <div className=" d-flex align-items-center justify-content-center container_producto">
                 <ItemList productos = {productos}/>                      
             </div>
         </div>
